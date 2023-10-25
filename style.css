@@ -1,0 +1,573 @@
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Body styles */
+body {
+  background: url('public/images/plugin-file-cover-1.png');
+  background-attachment: fixed;
+  /* Torna o background fixo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+header div {
+  width: 2000px;
+}
+
+.headerContainer ul {
+  display: flex;
+}
+
+.headerContainer ul li {
+  padding-left: 16rem;
+  transition: transform 0.3s;
+  /* Adicione uma transição suave para o efeito hover */
+}
+
+.headerContainer ul li:hover {
+  transform: scale(1.1);
+  /* Aumenta o tamanho do elemento em 10% ao passar o mouse */
+}
+
+.headerContainer a {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Suez One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.Ass {
+  margin-left: -1rem;
+  margin: -1rem auto;
+}
+
+.btn-liquid {
+  display: inline-block;
+  background-color: #ff007f;
+  /* Cor rosa pink */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 66px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 9px rgba(255, 0, 127, 0.2);
+}
+
+.btn-liquid:hover {
+  background-color: #ece80e;
+  /* Cor rosa pink mais clara no hover */
+  box-shadow: 0 9px 8px rgba(255, 0, 85, 0.4);
+}
+
+.inner {
+  display: inline-block;
+}
+
+/* Main content styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: #F7C65A;
+  font-family: Suez One;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+
+
+
+  main p {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 37px;
+    font-weight: 400;
+    width: 529px;
+  }
+
+  .container {
+    display: contents;
+    width: 100%;
+  }
+
+  .img {
+    margin-left: 8rem;
+  }
+
+  .presentation {
+    display: flex;
+    width: 100%;
+    margin-top: 7rem;
+  }
+
+  .cat {
+    width: 181px;
+    height: 118px;
+    margin-top: 11rem;
+  }
+
+  .book {
+    width: 340px;
+    height: 368px;
+  }
+
+  /* Footer styles */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFBF6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 17px;
+  }
+
+  footer nav ul {
+    display: flex;
+  }
+}
+
+/* Estilos para tablets (máximo: 715px) */
+@media (max-width: 715px) {
+  .hamburger-menu {
+    margin-right: 250px;
+    /* Valor negativo move o elemento para a esquerda */
+  }
+
+  body {
+    background: url('public/images/i-pad-pro-1291.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  .btn-liquid {
+    display: inline-block;
+    background-color: #ff007f;
+    /* Cor rosa pink */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 66px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 9px rgba(255, 0, 127, 0.2);
+  }
+
+  .btn-liquid:hover {
+    background-color: #ece80e;
+    /* Cor rosa pink mais clara no hover */
+    box-shadow: 0 9px 8px rgba(255, 0, 85, 0.4);
+  }
+
+  .inner {
+    display: inline-block;
+  }
+
+  .name {
+    color: #F7C65A;
+    font-family: Suez One;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    /* Alterado display para "block" em vez de "contents" para telas de tablet */
+    width: 100%;
+  }
+
+  .name figure {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .name figure:hover {
+    transform: translateY(-20px);
+  }
+
+  main {
+    display: block;
+    /* Alterado display para "block" em vez de "grid" para telas de tablet */
+    margin: 9rem auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3rem;
+  }
+
+  main p {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 37px;
+    font-weight: 400;
+    width: 100%;
+    margin-left: 19rem;
+  }
+
+  .container {
+    width: 100%;
+    /* Use 100% da largura disponível */
+    height: auto;
+    /* Deixe a altura se ajustar ao conteúdo */
+    top: auto;
+    /* Remova a posição absoluta */
+    right: auto;
+    /* Remova a posição absoluta */
+    margin-top: 67rem;
+    /* Alterado display para "block" em vez de "contents" para telas de tablet */
+  }
+
+  .img {
+    margin: 0 auto;
+    /* Centralizado horizontalmente */
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    /* Exibir os elementos abaixo um do outro */
+    align-items: center;
+    /* Centralizado horizontalmente */
+  }
+
+  .cat {
+    width: 181px;
+    height: 118px;
+    margin-top: 1rem;
+    /* Ajuste de margem superior */
+    margin-left: 6rem;
+  }
+
+  .book {
+    width: 340px;
+    height: 368px;
+    margin-left: 11rem;
+  }
+
+  footer nav ul {
+    display: none;
+  }
+}
+
+/* Estilos para celulares (máximo: 415px) */
+@media (max-width: 415px) {
+  body{
+    overflow-x: hidden ;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    margin-top: 3rem;
+    width: 100;
+  }
+
+  .woman {
+    margin-left: 4rem;
+    width: 100%;
+    /* Defina a largura desejada aqui */
+    width: 340px;
+    height: 298px;
+  }
+
+
+  .postt {
+    margin-left: 1.6rem;
+  }
+
+  .postt1 {
+    margin-left: 1.6rem;
+  }
+
+  .postt2 {
+    margin-left: 1.6rem;
+  }
+
+  .name {
+    color: #F7C65A;
+    font-family: Suez One;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    /* Alterado display para "block" em vez de "contents" para telas de tablet */
+    width: 100%;
+    font-size: 33px;
+  }
+
+  main {
+    display: block;
+    /* Alterado display para "block" em vez de "grid" para telas de tablet */
+    margin: 5rem auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: -6rem;
+  }
+
+  main p {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    width: 100%;
+    /* Ajustado para ocupar a largura total */
+    margin-left: 22rem;
+  }
+}
+
+main p {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 34px;
+  font-weight: 400;
+  width: 529px;
+}
+
+.container {
+  display: contents;
+  width: 100%;
+}
+
+
+
+
+
+.presentation {
+  display: flex;
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.cat {
+  width: 181px;
+  height: 118px;
+  margin-top: 11rem;
+}
+
+.book {
+  width: 340px;
+  height: 368px;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFBF6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 9px;
+  margin: 0.5rem;
+  color: #FFFBF6;
+  font-family: Doppio One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+footer nav ul {
+  display: flex;
+}
+
+/* Adicione esses estilos para o menu hamburguer */
+.hamburger-menu {
+  display: none;
+  /* Ocultar o menu hamburguer em telas maiores */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  /* Cor das barras do menu hamburguer */
+  margin: 4px 0;
+}
+
+/* Estilos para tornar o menu visível em telas menores usando media query */
+@media (max-width: 1200px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Adicione animações ou transições para melhorar a experiência do usuário */
+  .bar {
+    transition: 0.4s;
+
+  }
+
+  /* Estilos para transformar o ícone hamburguer em uma "X" quando o menu está aberto */
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Modificações no menu de navegação para torná-lo responsivo */
+  .headerContainer {
+    display: none;
+    /* Ocultar o menu de navegação em telas menores */
+  }
+
+  /* Estilos para o menu de navegação quando o menu hamburguer está aberto */
+  .headerContainer.open {
+    display: flex;
+    flex-direction: column;
+    background: url('public/images/plugin-file-cover-1.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .headerContainer.open ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .headerContainer.open li {
+    padding: 1rem;
+    /* Espaçamento entre os itens do menu */
+  }
+}
+
+@media (min-width: 716px) and (max-width: 1041px) {
+  .headerContainer ul {
+    display: flex;
+  }
+
+  .headerContainer ul li {
+    padding-left: 16rem;
+    transition: transform 0.3s;
+    /* Adicione uma transição suave para o efeito hover */
+  }
+
+  .headerContainer ul li:hover {
+    transform: scale(1.1);
+    /* Aumenta o tamanho do elemento em 10% ao passar o mouse */
+  }
+
+  .headerContainer a {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Suez One';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+  }
+
+  .Ass {
+    margin-left: -1rem;
+    margin: -1rem auto;
+  }
+
+  /* Main content styles */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .name {
+    color: #F7C65A;
+    font-family: Suez One;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  main p {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 37px;
+    font-weight: 400;
+    width: 529px;
+  }
+
+  .container {
+    display: contents;
+    width: 100%;
+  }
+
+  .img {
+    margin-left: 8rem;
+  }
+
+  .presentation {
+    display: flex;
+    width: 100%;
+    margin-top: 7rem;
+  }
+
+  .cat {
+    width: 181px;
+    height: 118px;
+    margin-top: 11rem;
+  }
+
+  .book {
+    width: 340px;
+    height: 368px;
+  }
+
+  /* Footer styles */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFBF6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 17px;
+  }
+
+  footer nav ul {
+    display: flex;
+  }
+}

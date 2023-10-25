@@ -1,0 +1,508 @@
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Body styles */
+body {
+  background: url('public/images/plugin-file-cover-1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+header div {
+  width: 2000px;
+}
+
+.headerContainer ul {
+  display: flex;
+}
+
+.headerContainer ul li {
+  padding-left: 16rem;
+  transition: transform 0.3s;
+  /* Adicione uma transição suave para o efeito hover */
+}
+
+.headerContainer ul li:hover {
+  transform: scale(1.1);
+  /* Aumenta o tamanho do elemento em 10% ao passar o mouse */
+}
+
+.headerContainer a {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Suez One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+.curriculo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 20px;
+}
+.Ass {
+  margin-left: -1rem;
+  margin: -1rem auto;
+}
+
+
+main section {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  width: 731px;
+  height: 537px;
+  flex-shrink: 0;
+  border-radius: 731px;
+  border: 19px solid rgba(197, 170, 148, 0.47);
+  background: rgba(220, 173, 131, 0.49);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -9rem auto;
+
+}
+
+.formContainer {
+  margin: 8rem auto;
+  justify-content: center;
+  align-items: center;
+  margin: 15rem auto;
+}
+
+.formContainer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+
+}
+
+.formContainer label {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Suez One;
+  font-size: 18px;
+
+}
+
+.formContainer input {
+  border-radius: 13px;
+  border: 5px solid rgba(166, 136, 111, 0.61);
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  width: 476px;
+  height: 44px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138%;
+  padding: 1rem;
+ 
+
+}
+
+.formContainer textarea {
+  border-radius: 2% 2% 50% 50%;
+  /* Isso cria metade de um círculo na parte superior */
+  border: 5px solid rgba(166, 136, 111, 0.61);
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  width: 482px;
+  height: 200px;
+  font-family: Cabin;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 138%;
+  padding: 1rem;
+}
+
+
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Suez One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-top: 1.8rem;
+}
+
+button {
+  width: 95px;
+  height: 40px;
+  color: #FFF;
+  font-family: Suez One;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.13px;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  border: 5px solid#cdb39d;
+  background: #D9D9D9;
+  text-shadow: 0px 4px 4px #8f7661;
+  background-color: #CAAD95;
+  margin-top: 2rem;
+  border-radius: 50%;
+  outline: none;
+  fill: rgba(188, 157, 132, 0.35);
+  stroke-width: 3px;
+  stroke: #CAAD95;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+button:hover {
+  background-color: #c4a998;
+  /* Altere a cor de fundo quando o mouse estiver sobre o botão */
+  transform: scale(1.1);
+  /* Aumenta o tamanho do botão em 10% ao passar o mouse */
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFBF6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 9px;
+  margin: 0.2rem;
+  color: #FFFBF6;
+  font-family: Doppio One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none; /* Ocultar o menu hamburguer em telas maiores */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff; /* Cor das barras do menu hamburguer */
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Estilos para tablets (máximo: 715px) */
+@media (max-width: 715px){
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  
+  main section {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 444px;
+    height: 511px;
+    flex-shrink: 0;
+    border-radius: 731px;
+    border: 9px solid rgba(197, 170, 148, 0.47);
+    background: rgba(220, 173, 131, 0.49);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .Call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -9rem auto;
+  
+  }
+  
+  .formContainer {
+    margin: 8rem auto;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem auto;
+  }
+  
+  .formContainer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+  
+  }
+  
+  .formContainer label {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Suez One;
+    font-size: 18px;
+  
+  }
+  
+  .formContainer input {
+    border-radius: 13px;
+    border: 5px solid rgba(166, 136, 111, 0.61);
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    width: 339px;
+    height: 44px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138%;
+    /* 20.7px */
+  
+  }
+  
+  .formContainer textarea {
+    border-radius: 2% 2% 50% 50%;
+    /* Isso cria metade de um círculo na parte superior */
+    border: 5px solid rgba(166, 136, 111, 0.61);
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    width: 350px;
+    height: 200px;
+    font-family: Cabin;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 138%;
+  }
+  
+  
+  
+  .formContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.6rem;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Suez One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    margin-top: 1.8rem;
+  }
+  
+  button {
+    width: 95px;
+    height: 40px;
+    color: #FFF;
+    font-family: Suez One;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.13px;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+    border: 5px solid#cdb39d;
+    background: #D9D9D9;
+    text-shadow: 0px 4px 4px #8f7661;
+    background-color: #CAAD95;
+    margin-top: 2rem;
+    border-radius: 50%;
+    outline: none;
+    fill: rgba(188, 157, 132, 0.35);
+    stroke-width: 3px;
+    stroke: #CAAD95;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    overflow-x: hidden ;
+  }
+
+  header {
+    margin: 6rem;
+    /* Reduz a margem do cabeçalho para celulares */
+    margin-top: 9rem;
+  }
+
+  header div {
+    width: 100%;
+    /* Torna o cabeçalho 100% de largura para celulares */
+  }
+
+ 
+  .headerContainer ul li {
+    padding: 0.5rem;
+    /* Reduz o espaçamento entre os itens do menu para celulares */
+  }
+
+  .formContainer {
+    margin: 1rem auto;
+  
+    /* Ajusta a margem do formulário para celulares */
+  }
+
+  .formContainer input,
+  .formContainer textarea {
+    width: 100%;
+    /* Torna os campos de entrada de largura total para celulares */
+  }
+
+  .Ass {
+    margin: -7rem auto 3rem;
+   
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFBF6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 17px;
+
+  }
+
+  main section {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 290px;
+    height: 537px;
+    flex-shrink: 0;
+    border-radius: 731px;
+    border: 19px solid rgba(197, 170, 148, 0.47);
+    background: rgba(220, 173, 131, 0.49);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .hamburger-menu {
+    display: none;
+    /* Ocultar o menu hamburguer em telas maiores */
+    cursor: pointer;
+    margin: -6rem auto;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    /* Cor das barras do menu hamburguer */
+    margin: 4px 0;
+    
+  }
+}
+
+/* Adicione esses estilos para o menu hamburguer */
+.hamburger-menu {
+  display: none;
+  /* Ocultar o menu hamburguer em telas maiores */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  /* Cor das barras do menu hamburguer */
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.hamburger-menu {
+  display: none;
+  /* Ocultar o menu hamburguer em telas maiores */
+  cursor: pointer;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFBF6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 9.5px;
+}
+
+/* Estilos para tornar o menu visível em telas menores usando media query */
+@media (max-width: 768px) {
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .headerContainer {
+      display: none;
+      /* Ocultar o menu de navegação em telas menores */
+      background: url('public/images/plugin-file-cover-1.png');
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .headerContainer.open {
+      display: flex;
+    }
+  
+    .headerContainer.open ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    .headerContainer.open li {
+      padding: 1rem;
+      /* Espaçamento entre os itens do menu */
+    }
+    .hamburger-menu.open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .hamburger-menu.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger-menu.open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+}

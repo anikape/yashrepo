@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Archivo+Black&family=Chelsea+Market&family=Lalezar&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Body styles */
+body {
+  background: url('public/images/about.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+header div {
+  width: 2000px;
+}
+
+.headerContainer ul {
+  display: flex;
+}
+
+.headerContainer ul li {
+  padding-left: 16rem;
+  transition: transform 0.3s;
+  /* Adicione uma transição suave para o efeito hover */
+}
+
+.headerContainer ul li:hover {
+  transform: scale(1.1);
+  /* Aumenta o tamanho do elemento em 10% ao passar o mouse */
+}
+
+.headerContainer a {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Suez One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.Ass {
+  margin-left: -1rem;
+  margin: -rem auto;
+}
+
+.NameProjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NameProjects figure {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.NameProjects figure:hover {
+  transform: translateY(-20px);
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: 308px;
+  flex-shrink: 0;
+  border-radius: 720px;
+  border: 19px solid rgba(197, 170, 148, 0.47);
+  background: rgba(220, 173, 131, 0.37);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 5rem auto;
+}
+
+main p {
+  width: 577px;
+  height: 193px;
+  color: rgba(62, 26, 1, 0.88);
+  text-align: center;
+  font-family: El Messiri;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.3%;
+  margin-top: -2rem;
+  /* 29.46px */
+}
+
+/* Estilos de hover para a seção principal */
+main section:hover {
+  background: rgba(220, 173, 131, 0.5);
+  /* Altera o background no hover */
+}
+
+main p:hover {
+  color: #000;
+  /* Altera a cor do texto no hover */
+}
+
+.Skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -6rem;
+}
+
+.Skill {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Skill figure {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.Skill figure:hover {
+  transform: translateY(-20px);
+}
+
+.Planner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18rem auto;
+  position: relative;
+}
+
+.projectList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 24rem;
+  margin-top: -14rem;
+}
+
+.projectList ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 4.4rem;
+  margin-left: -0.5rem;
+}
+
+.projectList li {
+  display: flex;
+  margin-bottom: 35px;
+  width: 600px;
+  height: 85px;
+  margin-top: 1rem;
+}
+
+.projectList li img {
+  margin-right: 10px;
+  max-width: 600px;
+}
+
+.projects1 {
+  color: rgba(62, 26, 1, 0.88);
+  text-align: center;
+  font-family: El Messiri;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: bold;
+  margin-left: 2.5rem;
+}
+
+.Project {
+  width: 194px;
+  height: 93px;
+  color: rgba(62, 26, 1, 0.88);
+  text-align: center;
+  font-family: El Messiri;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-direction: column;
+  margin-left: -9rem;
+}
+
+.linksProjects {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: -3em;
+  margin-left: 6rem;
+
+}
+
+.linksProjects a {
+  color: rgba(62, 26, 1, 0.88);
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
+.Images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+
+.Images2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+
+.Images3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+
+.projects {
+  color: rgba(62, 26, 1, 0.88);
+  text-align: center;
+  font-family: El Messiri;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFBF6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 9px;
+  margin: 0.5rem;
+  color: #FFFBF6;
+  font-family: Doppio One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+/* Estilos para telas de tlabet (largura máxima de 768px) */
+@media (max-width: 768px) {
+  .NameProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 44rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+
+  main section {
+    width: 100%;
+    height: auto;
+    border-radius: 3;
+    border: 4px solid rgba(197, 170, 148, 0.47);
+    margin: 5rem auto;
+    margin-top: 4rem;
+  }
+
+  main p {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 0;
+
+  }
+
+  .project {
+    color: rgba(62, 26, 1, 0.88);
+    text-align: center;
+    font-family: El Messiri;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-weight: bold;
+  }
+
+  .Skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .Planner {
+    margin: 19rem auto;
+    /* Reduzindo a margem para dispositivos móveis */
+    margin-left: -9rem;
+    margin: 2;
+    margin-top: -1rem;
+
+
+  }
+
+  .projectList {
+    margin-left: 2%;
+    /* Reduzindo a margem para dispositivos móveis */
+    margin-left: 14rem;
+    margin-top: -9rem;
+    margin-top: -0.5rem;
+
+  }
+
+  .projectList li {
+    margin-bottom: 29px;
+    margin-left: -1rem;
+
+
+  }
+
+  .Project {
+    font-size: 11px;
+    /* Reduzindo o tamanho da fonte */
+    margin-top: 0.5rem;
+
+
+  }
+
+  .linksProjects {
+    /* Remova as propriedades 'margin-left' e 'padding-top' para dispositivos móveis */
+    color: rgba(62, 26, 1, 0.88);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+    margin-left: 6rem;
+  }
+
+  .Images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    margin-top: -33rem;
+  }
+
+  .Images2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    flex-direction: column;
+  }
+
+  .Images3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+  }
+}
+
+/* Estilos para celulares (máximo: 415px) */
+@media (max-width: 415px) {
+  body{
+    overflow-x: hidden ;
+    max-height: 50vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    margin-top: 3rem;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .NameProjects {
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+   
+    
+  }
+
+  .NameProjects img{
+    width: 35px;
+    
+  }
+
+  main section {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    border: 4px solid rgba(197, 170, 148, 0.47);
+    margin: 5rem auto;
+    margin-top: 4rem;
+  }
+
+  main p {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .Skill {
+    display: flex;
+    justify-content: space-around;
+   
+
+  }
+
+  .projects {
+    color: rgba(62, 26, 1, 0.88);
+    text-align: center;
+    font-family: El Messiri;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-weight: bold;
+  }
+
+  .Planner {
+    
+    margin: 19rem auto;
+    /* Reduzindo a margem para dispositivos móveis */
+    margin-left: -9rem;
+    margin: 2;
+    margin-top: -1rem;
+  }
+
+  .projectList {
+    margin-left: 2%;
+    /* Reduzindo a margem para dispositivos móveis */
+    margin-left: 14rem;
+    margin-left: 17rem;
+    margin-top: -1rem;
+  }
+
+  .projectList li {
+    margin-bottom: 29px;
+    margin-left: -7rem;
+
+  }
+
+  .Project {
+    font-size: 11px;
+    /* Reduzindo o tamanho da fonte */
+    margin-top: 0.5rem;
+  }
+
+  .linksProjects {
+    /* Remova as propriedades 'margin-left' e 'padding-top' para dispositivos móveis */
+    color: rgba(62, 26, 1, 0.88);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+    margin-left: 6rem;
+  }
+
+  .projectList li {
+    width: 450px;
+    height: 48px;
+    margin: 3.6rem;
+    margin-left: -5.1rem;
+    margin-top: 4.4rem;
+
+  }
+
+
+  .Images {
+   
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .Images2 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .Images3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ 
+  }
+}
+
+/* Adicione esses estilos para o menu hamburguer */
+.hamburger-menu {
+  display: none;
+  /* Ocultar o menu hamburguer em telas maiores */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  /* Cor das barras do menu hamburguer */
+  margin: 4px 0;
+}
+
+/* Estilos para tornar o menu visível em telas menores usando media query */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Adicione animações ou transições para melhorar a experiência do usuário */
+  .bar {
+    transition: 0.4s;
+  }
+
+  /* Estilos para transformar o ícone hamburguer em uma "X" quando o menu está aberto */
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Modificações no menu de navegação para torná-lo responsivo */
+  .headerContainer {
+    display: none;
+    /* Ocultar o menu de navegação em telas menores */
+  }
+
+  /* Estilos para o menu de navegação quando o menu hamburguer está aberto */
+  .headerContainer.open {
+    display: flex;
+    flex-direction: column;
+    background: url('public/images/plugin-file-cover-1.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .headerContainer.open ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .headerContainer.open li {
+    padding: 1rem;
+    /* Espaçamento entre os itens do menu */
+  }
+}

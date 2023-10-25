@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Archivo+Black&family=Chelsea+Market&family=Lalezar&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Body styles */
+body {
+  background: url('public/images/about.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+header div {
+  width: 2000px;
+}
+
+
+.name {
+  color: rgba(62, 26, 1, 0.88);
+  text-align: center;
+  font-family: El Messiri;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.headerContainer ul {
+  display: flex;
+}
+
+.headerContainer ul li {
+  padding-left: 16rem;
+  transition: transform 0.3s;
+  /* Adicione uma transição suave para o efeito hover */
+}
+
+.headerContainer ul li:hover {
+  transform: scale(1.1);
+  /* Aumenta o tamanho do elemento em 10% ao passar o mouse */
+}
+
+.headerContainer a {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Suez One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.Ass {
+  margin-left: -1rem;
+  margin: -1rem auto;
+}
+
+.table {
+  width: 527px;
+  height: 456px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 45rem;
+  right: 0;
+}
+
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1174px;
+  height: 649px;
+  border-radius: 1174px;
+  border: 19px solid rgba(197, 170, 148, 0.47);
+  background: rgba(220, 173, 131, 0.37);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 14rem auto;
+}
+
+main p {
+  color: rgba(62, 26, 1, 0.88);
+  font-family: El Messiri;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+  font-size: 22px;
+  width: 733px;
+}
+
+/* Estilos de hover para a seção principal */
+main section:hover {
+  background: rgba(220, 173, 131, 0.5);
+  /* Altera o background no hover */
+}
+
+main p:hover {
+  color: #000;
+  /* Altera a cor do texto no hover */
+}
+
+
+
+/* Footer styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFBF6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 9px;
+  margin: 0.5rem;
+  color: #FFFBF6;
+  font-family: Doppio One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+/* Estilos para tablets (máximo: 715px) */
+@media (max-width: 715px) {
+
+  .table {
+    width: 100%;
+    /* Use 100% da largura disponível */
+    height: auto;
+    /* Deixe a altura se ajustar ao conteúdo */
+    top: auto;
+    /* Remova a posição absoluta */
+    right: auto;
+    /* Remova a posição absoluta */
+    margin-top: 67rem;
+    margin-left: 5rem;
+  }
+
+  main section {
+    width: 100%;
+    /* Use 100% da largura disponível */
+    height: auto;
+    /* Deixe a altura se ajustar ao conteúdo */
+    border-radius: 0;
+    /* Remova a borda arredondada */
+    border: 1px solid rgba(197, 170, 148, 0.47);
+    /* Reduza a espessura da borda */
+    background: rgba(220, 173, 131, 0.37);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 2rem auto;
+    /* Reduza a margem */
+  }
+
+  main p {
+    width: 100%;
+    /* Use 100% da largura disponível */
+    font-size: 18px;
+    /* Reduza o tamanho da fonte */
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFBF6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 11px;
+    margin-top: 29rem;
+  }
+
+  footer nav ul {
+    display: flex;
+  }
+}
+  /* Estilos para celulares (máximo: 415px) */
+  @media (max-width: 415px) {
+
+    body{
+      overflow-x: hidden ;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      margin: 5rem;
+      margin-top: 3rem;
+    }
+
+    .table {
+      width: 100%;
+      /* Use 100% da largura disponível */
+      height: auto;
+      /* Deixe a altura se ajustar ao conteúdo */
+      top: auto;
+      /* Remova a posição absoluta */
+      right: auto;
+      /* Remova a posição absoluta */
+      margin-top: 80rem;
+      
+    }
+
+    main section {
+      width: 100%;
+      /* Use 100% da largura disponível */
+      height: auto;
+      /* Deixe a altura se ajustar ao conteúdo */
+      border-radius: 0;
+      /* Remova a borda arredondada */
+      border: 1px solid rgba(197, 170, 148, 0.47);
+      /* Reduza a espessura da borda */
+      background: rgba(220, 173, 131, 0.37);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      margin: 2rem auto;
+      /* Reduza a margem */
+    }
+
+    main p {
+      width: 100%;
+      /* Use 100% da largura disponível */
+      font-size: 18px;
+      /* Reduza o tamanho da fonte */
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #FFFBF6;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 9px;
+      margin: 0.5rem;
+      margin-top: 22rem;
+      color: #FFFBF6;
+      font-family: Doppio One;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 44rem;
+    }
+
+  }
+
+  /* Adicione esses estilos para o menu hamburguer */
+  .hamburger-menu {
+    display: none;
+    /* Ocultar o menu hamburguer em telas maiores */
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    /* Cor das barras do menu hamburguer */
+    margin: 4px 0;
+  }
+
+  /* Estilos para tornar o menu visível em telas menores usando media query */
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+    }
+
+    /* Adicione animações ou transições para melhorar a experiência do usuário */
+    .bar {
+      transition: 0.4s;
+    }
+
+    /* Estilos para transformar o ícone hamburguer em uma "X" quando o menu está aberto */
+    .hamburger-menu.open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger-menu.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-menu.open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Modificações no menu de navegação para torná-lo responsivo */
+    .headerContainer {
+      display: none;
+      /* Ocultar o menu de navegação em telas menores */
+    }
+
+    /* Estilos para o menu de navegação quando o menu hamburguer está aberto */
+    .headerContainer.open {
+      display: flex;
+      flex-direction: column;
+      background: url('public/images/plugin-file-cover-1.png');
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .headerContainer.open ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .headerContainer.open li {
+      padding: 1rem;
+      /* Espaçamento entre os itens do menu */
+    }
+  }
