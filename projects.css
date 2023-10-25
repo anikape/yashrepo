@@ -362,6 +362,15 @@ footer nav ul {
 
   }
 
+  .NameProjects {
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+   
+    
+  }
+
   .linksProjects {
     /* Remova as propriedades 'margin-left' e 'padding-top' para dispositivos móveis */
     color: rgba(62, 26, 1, 0.88);
